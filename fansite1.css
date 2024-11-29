@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: #c4f0ec;
+    color: #333;
+}
+
+header, footer {
+    background-color: #00050a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav img {
+    width: 230px;
+    display: flex;
+    align-items:start;
+    margin-bottom: 30px;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+header nav a, footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+/* menu humberger */
+.menu-icon { 
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+} 
+#menu-toggle { 
+    display: none; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #e0e0d2;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.actual {
+    background: #fdfafa;
+}
+
+section h2, section h3 { 
+    margin-top: 0; 
+} 
+.actual article {
+    margin: 10px ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 10px); /* Quatre articles par ligne avec un espacement */
+    flex: 1;/* Permet aux articles de prendre une taille égale */ 
+    text-align: center;
+}
+.actual h2 {
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour espacer les articles */ 
+}
+.articles p {
+    text-align: start;
+}
+#actualite article { 
+    margin-bottom: 20px; 
+} 
+.actual img {
+    width: 200px;
+    height: auto;
+}
+
+article h3 { 
+    color: #0056b3; 
+} 
+
+article p { 
+    margin: 0;
+ }
+
+/* video mp4 */
+ .video-container {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    background: #171313;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.video-container p {
+    color: rgb(234, 236, 221);
+    text-align: start;
+}
+
+video { 
+    width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 5px; 
+    text-align: center;
+}
+#realisations h3 {
+    margin-top: 10px;
+    color: rgb(104, 13, 3);
+    text-align: center;
+    
+}
+#evenements a {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.4em;
+    color: rgb(5, 3, 77);
+    margin-bottom:  20px;
+    margin-top: 20px;  
+}
+#evenements h2{
+    border-bottom: rgb(46, 34, 17);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #010f1f;
+    color: white;
+}
+
+tbody tr {
+    border-top: 1px solid #f7f2f2;
+    
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f58686;
+    color:white;
+}
+
+/* Tableau des liens de fans */
+.links-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.links-table th, .links-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.links-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.links-table a {
+    color: #045d55;
+    text-decoration: none;
+}
+
+.links-table a:hover {
+    text-decoration: underline;
+}
+
+/* forme de contacte */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fdf1f1;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #376ea8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0c6412;
+}
+.envoyer {
+    margin: 15px ;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(239, 236, 236);
+    background: #f58686;
+    
+}
+.envoyer h2 {
+    color: rgb(9, 0, 0);
+    text-align: center;
+}
+/* Media Queries */
+
+/* Styles pour les petits appareils (téléphones) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        display: none; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    header nav a { 
+        padding: 10px; 
+        border-top: 1px solid #444; 
+    } 
+
+    .menu-icon { 
+        display: block; 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+    } 
+    #menu-toggle:checked + .menu-icon + nav { 
+        display: flex; 
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px 0;
+    }   
+}
+
+/* Styles pour les appareils moyens (tablettes) */
+@media (min-width: 769px) and (max-width: 1100px) {
+    header nav {
+        flex-direction: row;
+    }
+
+    section {
+        padding: 20px;
+        margin: 15px 0;
+    }
+}
+
+/* Styles pour les grands appareils (ordinateurs de bureau) */
+@media (min-width: 1101px) {
+    header nav {
+        flex-direction: row;
+    }
+
+    section {
+        padding: 25px;
+        margin: 20px 0;
+    }
+}
+
+/* ----------------- */
+
+
+
+
+
+
+

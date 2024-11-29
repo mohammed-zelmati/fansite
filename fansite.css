@@ -1,0 +1,192 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #01080f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a, footer p, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color :rgb(239, 246, 243);
+}
+
+.menu-icon { 
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+} 
+#menu-toggle { 
+    display: none; 
+}
+ 
+main {
+    padding: 20px;
+    background: #d4ddee;
+} 
+h1 {
+    text-align: center;
+}
+
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    background: #b1c2da;
+    margin: 10px ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* Trois sections par ligne avec un espacement */
+    flex: 1;/* Permet aux sections de prendre une taille égale */ 
+    text-align: center;
+}
+
+/* Conteneur principal */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour espacer les sections */ 
+}
+
+section img { 
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+section p { 
+    text-align: justify; 
+    color:rgb(40, 37, 9);
+    font-size: 1.2em;
+}
+
+/* Styles pour le lien en forme de bouton */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #f70505c6;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+.button-link:hover {
+    background-color: #75f00a;
+    color: #030700;
+}
+
+footer a{
+    padding: 5px; 
+}
+/* Media Queries */
+
+/* Styles pour les petits appareils (téléphones) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        display: none; 
+        width: 100%; 
+        text-align: right;
+    }
+
+    header:has(h2) {
+        font-size:0.9em;
+        
+    }
+    section:has(h2) {
+        font-size:0.8em;
+    }
+    header nav a { 
+        padding: 10px; 
+        border-top: 1px solid #444; 
+        text-align: center;
+    } 
+
+    .menu-icon { 
+        display: block; 
+        position: absolute; 
+        top: 10px; 
+        left: 20px;
+    } 
+
+    #menu-toggle:checked + .menu-icon + nav { 
+        display: flex; 
+    }
+
+    main {
+        padding: 10px;
+    }
+    
+    h1{
+        font-size: 1.4em;
+    }
+    .main-container { 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    } 
+
+    section img, section h3 { 
+        text-align: center;
+    } 
+    section p {
+        text-align: start;
+    }
+}
+/* Styles pour les appareils moyens (tablettes) */
+@media (min-width: 769px) and (max-width: 1100px) {
+    header nav {
+        flex-direction: row;
+    }
+
+    .main-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* Styles pour les grands appareils (ordinateurs de bureau) */
+@media (min-width: 1101px) {
+    header nav {
+        flex-direction: row;
+    }
+
+    .main-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }   
+}
+
+/* ---------------- */
+
+
+
