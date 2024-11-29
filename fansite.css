@@ -64,6 +64,10 @@ section {
     text-align: center;
 }
 
+#youngthug{
+    height: 70%;
+}
+
 /* Conteneur principal */
 .main-container {
     display: flex;
