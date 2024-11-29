@@ -216,6 +216,17 @@ form input, form textarea {
     border: 1px solid #fdf1f1;
     border-radius: 4px;
 }
+/* textarea */
+.no-overflow {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    resize: none; /* Empêche le redimensionnement de la zone de texte */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
+}
 
 form button {
     padding: 10px;
