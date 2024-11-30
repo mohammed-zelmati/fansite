@@ -119,16 +119,35 @@ article p {
 
 video { 
     width: 100%; 
+    height: auto;
     border-radius: 8px; 
     margin-bottom: 5px; 
     text-align: center;
 }
+
+#realisations {
+    display: flex;
+    flex-direction:column;
+  }
+
 #realisations h3 {
     margin-top: 10px;
     color: rgb(104, 13, 3);
-    text-align: center;
-    
+    text-align: center;  
 }
+ 
+.video-container1 {
+    margin-bottom: 20px;
+}
+.articlesVideo {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    height: auto;
+}
+/* fin realisations */
+  
 #evenements a {
     display:flex;
     flex-wrap: wrap;
@@ -142,7 +161,7 @@ video {
     border-bottom: rgb(46, 34, 17);
 }
 
-
+/* Table d'évenements passés */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -251,6 +270,7 @@ form button:hover {
     color: rgb(9, 0, 0);
     text-align: center;
 }
+
 /* Media Queries */
 
 /* Styles pour les petits appareils (téléphones) */
@@ -284,7 +304,7 @@ form button:hover {
     section {
         padding: 15px;
         margin: 10px 0;
-    }   
+    }  
 }
 
 /* Styles pour les appareils moyens (tablettes) */
@@ -297,6 +317,16 @@ form button:hover {
         padding: 20px;
         margin: 15px 0;
     }
+
+    .articlesVideo {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    article {
+      width: 48%;
+    }
+  
 }
 
 /* Styles pour les grands appareils (ordinateurs de bureau) */
@@ -309,13 +339,17 @@ form button:hover {
         padding: 25px;
         margin: 20px 0;
     }
+    .articlesVideo {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      article {
+        width: 48%;
+      }
 }
 
 /* ----------------- */
-
-
-
-
 
 
 
