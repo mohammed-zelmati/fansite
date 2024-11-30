@@ -272,20 +272,29 @@
             <div class="envoyer">
                 <h2>Contact</h2>
                 <form action="#" method="post">
-                    <label for="name">Nom:</label>
+                    <label for="name" aria-label="Entrez votre nom">Nom:</label>
                     <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
+                    <label for="firstname" aria-label="Entrez votre prénom">Prénom:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <label for="email" aria-label="Entrez votre Email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
+                    <label for="ville" aria-label="Entrez votre ville">Ville:</label>
+                    <input type="text" id="ville" name="ville" required>
+                    <label for="message" aria-label="Entrez votre Message">Message:</label>
                     <textarea class="no-overflow" rows="10" cols="50"   required></textarea>
-
                     <button type="submit">Envoyer</button>
                 </form>
             </div>    
         </section>
     </main>
     <footer>
-        <a href="#" class="button-link">Haute page</a>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="fansite1.html">Actualité</a></p>
+        <p><a href="fansite1.html#realisations">Réalisations</a</p>
+        <p><a href="fansite1.html#evenements">Événements</a></p>
+        <p><a href="fansite1.html#liens">Liens de Fans</a></p>
+        <p><a href="fansite1.html#contact">Contact</a</p>
+        <p><a href="#" class="button-link">Haute page</a></p>
         <p>&copy; 2024 Fansite. Tous droits réservés.</p>
     </footer>
 </body>

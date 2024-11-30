@@ -49,6 +49,7 @@ header nav a:hover, footer a:hover {
 
 main {
     padding: 20px;
+    background: #426759;
 }
 
 section {
@@ -187,7 +188,7 @@ tbody tr:last-child {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f58686;
+    background-color: #6e6a6a;;
     color:white;
 }
 
@@ -211,7 +212,7 @@ tbody tr:nth-child(even) {
 }
 
 .links-table a {
-    color: #045d55;
+    color: #11e8e8;
     text-decoration: none;
 }
 
@@ -263,12 +264,15 @@ form button:hover {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(239, 236, 236);
-    background: #f58686;
+    background: #6e6a6a;
     
 }
 .envoyer h2 {
-    color: rgb(9, 0, 0);
+    color: rgb(240, 230, 230);
     text-align: center;
+}
+.envoyer label {
+    color:rgb(234, 236, 221);
 }
 
 /* Media Queries */
@@ -280,6 +284,9 @@ form button:hover {
         display: none; 
         width: 100%; 
         text-align: center;
+    }
+    nav img {
+        margin: 0 auto;
     }
 
     header nav a { 
