@@ -49,6 +49,7 @@ header nav a:hover, footer a:hover {
 
 main {
     padding: 20px;
+    background: #426759;
 }
 
 section {
@@ -119,16 +120,35 @@ article p {
 
 video { 
     width: 100%; 
+    height: auto;
     border-radius: 8px; 
     margin-bottom: 5px; 
     text-align: center;
 }
+
+#realisations {
+    display: flex;
+    flex-direction:column;
+  }
+
 #realisations h3 {
     margin-top: 10px;
     color: rgb(104, 13, 3);
-    text-align: center;
-    
+    text-align: center;  
 }
+ 
+.video-container1 {
+    margin-bottom: 20px;
+}
+.articlesVideo {
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    height: auto;
+}
+/* fin realisations */
+  
 #evenements a {
     display:flex;
     flex-wrap: wrap;
@@ -142,7 +162,7 @@ video {
     border-bottom: rgb(46, 34, 17);
 }
 
-
+/* Table d'évenements passés */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -168,7 +188,7 @@ tbody tr:last-child {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f58686;
+    background-color: #6e6a6a;;
     color:white;
 }
 
@@ -192,7 +212,7 @@ tbody tr:nth-child(even) {
 }
 
 .links-table a {
-    color: #045d55;
+    color: #11e8e8;
     text-decoration: none;
 }
 
@@ -244,13 +264,17 @@ form button:hover {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(239, 236, 236);
-    background: #f58686;
+    background: #6e6a6a;
     
 }
 .envoyer h2 {
-    color: rgb(9, 0, 0);
+    color: rgb(240, 230, 230);
     text-align: center;
 }
+.envoyer label {
+    color:rgb(234, 236, 221);
+}
+
 /* Media Queries */
 
 /* Styles pour les petits appareils (téléphones) */
@@ -260,6 +284,9 @@ form button:hover {
         display: none; 
         width: 100%; 
         text-align: center;
+    }
+    nav img {
+        margin: 0 auto;
     }
 
     header nav a { 
@@ -284,7 +311,7 @@ form button:hover {
     section {
         padding: 15px;
         margin: 10px 0;
-    }   
+    }  
 }
 
 /* Styles pour les appareils moyens (tablettes) */
@@ -297,6 +324,16 @@ form button:hover {
         padding: 20px;
         margin: 15px 0;
     }
+
+    .articlesVideo {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    article {
+      width: 48%;
+    }
+  
 }
 
 /* Styles pour les grands appareils (ordinateurs de bureau) */
@@ -309,13 +346,17 @@ form button:hover {
         padding: 25px;
         margin: 20px 0;
     }
+    .articlesVideo {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      article {
+        width: 48%;
+      }
 }
 
 /* ----------------- */
-
-
-
-
 
 
 
