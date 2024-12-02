@@ -8,10 +8,8 @@ body {
 }
 
 header img {
-    width: 770px;
-    height: 90px;
-    display: block; /* Évite les marges indésirables */
-    margin: 0 auto; /* Centre l'image horizontalement */
+   max-width:90%;
+   height: auto;
 }
 
 
@@ -146,6 +144,11 @@ form button:hover {
 
     .nav-links li {
         margin: 10px 0;
+    }
+}
+@media (max-width:600px){
+    header img {
+        max-width: 80%;
     }
 }
 

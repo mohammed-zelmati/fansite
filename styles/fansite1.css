@@ -7,13 +7,29 @@ body {
     flex-direction: column;
     background-color: #c4f0ec;
     color: #333;
+    font-size: 18px;/*  taille de police de base */
 }
+
+h1 { 
+    font-size: 36px;
+ }
+
+h2 { 
+    font-size: 30px; 
+} 
+
+h3 { 
+    font-size: 24px; 
+} 
+
+p { font-size: 18px; /* Taille de police de base pour les paragraphes */ }
 
 header, footer {
     background-color: #00050a;
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 18px; /* Taille de police pour header et footer */
 }
 
 nav img {
@@ -32,6 +48,7 @@ header nav a, footer a {
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px; /* Taille de police pour les liens de navigation */
 }
 
 header nav a:hover, footer a:hover {
